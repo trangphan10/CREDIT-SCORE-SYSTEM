@@ -9,7 +9,7 @@ Dự án này nhằm mục đích xây dựng một quy trình tự động cho 
 ## Hướng Dẫn Chạy Dự Án
 
 ### 1. Clone Repository
-Đầu tiên, clone repository về máy:
+Clone repository về máy:
 ```bash
 git clone https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git
 ```
