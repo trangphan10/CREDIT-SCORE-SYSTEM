@@ -17,12 +17,12 @@ git clone https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git
 
 - Đầu tiên cài đặt Docker và Apache Airflow trên Docker.
 - Chạy lệnh sau để khởi động Airflow:
-  ```bash
+```bash
   docker-compose up
-  ```
+```
 
 ### 3. Chạy ứng dụng Streamlit
-  ```bash
+```bash
 streamlit run ./credit_score.py
- ```
+```
 
