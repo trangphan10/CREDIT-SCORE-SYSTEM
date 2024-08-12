@@ -11,13 +11,12 @@ Dự án này nhằm mục đích xây dựng một quy trình tự động cho 
 ### 1. Clone Repository
 Đầu tiên, clone repository về máy:
 ```bash
-git clone [[URL repository]](https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git)
+git clone https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git
 ```
 ### 2. Chạy quy trình tự động bằng Airflow
 
-- Đảm bảo rằng bạn đã cài đặt Docker và Apache Airflow trên Docker.
+- Đầu tiên cài đặt Docker và Apache Airflow trên Docker.
 - Chạy lệnh sau để khởi động Airflow:
-
   ```bash
   docker-compose up
   ```
