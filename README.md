@@ -4,7 +4,7 @@
 
 ## Mô Tả Dự Án
 
-Dự án này nhằm mục đích xây dựng một quy trình tự động cho hệ thống chấm điểm tín dụng, sử dụng Apache Airflow để quản lý và triển khai quy trình, cùng với ứng dụng Streamlit để hiển thị kết quả và giao diện người dùng.
+Dự án này tập trung vào việc phát triển một quy trình tự động cho hệ thống chấm điểm tín dụng. Chúng tôi sử dụng Apache Airflow để quản lý và triển khai quy trình tự động, đồng thời áp dụng Streamlit để trực quan hóa và giám sát hoạt động của hệ thống.
 
 ## Hướng Dẫn Chạy Dự Án
 
