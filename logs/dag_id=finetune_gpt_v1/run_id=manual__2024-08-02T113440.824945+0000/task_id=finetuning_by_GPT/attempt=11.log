@@ -1,0 +1,34 @@
+[2024-08-02T12:14:35.117+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: finetune_gpt_v1.finetuning_by_GPT manual__2024-08-02T11:34:40.824945+00:00 [queued]>
+[2024-08-02T12:14:35.128+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: finetune_gpt_v1.finetuning_by_GPT manual__2024-08-02T11:34:40.824945+00:00 [queued]>
+[2024-08-02T12:14:35.129+0000] {taskinstance.py:2193} INFO - Starting attempt 11 of 11
+[2024-08-02T12:14:35.145+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): finetuning_by_GPT> on 2024-08-02 11:34:40.824945+00:00
+[2024-08-02T12:14:35.154+0000] {standard_task_runner.py:60} INFO - Started process 744 to run task
+[2024-08-02T12:14:35.157+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'finetune_gpt_v1', 'finetuning_by_GPT', 'manual__2024-08-02T11:34:40.824945+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/finetune_gpt.py', '--cfg-path', '/tmp/tmpcemmnmii']
+[2024-08-02T12:14:35.160+0000] {standard_task_runner.py:88} INFO - Job 69: Subtask finetuning_by_GPT
+[2024-08-02T12:14:35.217+0000] {task_command.py:423} INFO - Running <TaskInstance: finetune_gpt_v1.finetuning_by_GPT manual__2024-08-02T11:34:40.824945+00:00 [running]> on host 763b10b8ea7f
+[2024-08-02T12:14:35.313+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='finetune_gpt_v1' AIRFLOW_CTX_TASK_ID='finetuning_by_GPT' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T11:34:40.824945+00:00' AIRFLOW_CTX_TRY_NUMBER='11' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-02T11:34:40.824945+00:00'
+[2024-08-02T12:14:38.678+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/finetune_gpt.py", line 52, in finetuning
+    response = client.fine_tuning.jobs.create(
+  File "/home/airflow/.local/lib/python3.8/site-packages/openai/resources/fine_tuning/jobs/jobs.py", line 133, in create
+    return self._post(
+  File "/home/airflow/.local/lib/python3.8/site-packages/openai/_base_client.py", line 1266, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/airflow/.local/lib/python3.8/site-packages/openai/_base_client.py", line 942, in request
+    return self._request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/openai/_base_client.py", line 1046, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': 'Fine-tuning jobs cannot be created on an Explore plan. You can upgrade to a paid plan on your billing page: https://platform.openai.com/account/billing/overview', 'type': 'invalid_request_error', 'param': None, 'code': 'exceeded_quota'}}
+[2024-08-02T12:14:38.694+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=finetune_gpt_v1, task_id=finetuning_by_GPT, execution_date=20240802T113440, start_date=20240802T121435, end_date=20240802T121438
+[2024-08-02T12:14:38.713+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 69 for task finetuning_by_GPT (Error code: 400 - {'error': {'message': 'Fine-tuning jobs cannot be created on an Explore plan. You can upgrade to a paid plan on your billing page: https://platform.openai.com/account/billing/overview', 'type': 'invalid_request_error', 'param': None, 'code': 'exceeded_quota'}}; 744)
+[2024-08-02T12:14:38.754+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-02T12:14:38.774+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

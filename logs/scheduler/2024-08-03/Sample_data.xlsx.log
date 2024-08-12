@@ -1,0 +1,90 @@
+[2024-08-03T02:58:34.880+0000] {processor.py:161} INFO - Started process (PID=817) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:58:34.881+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T02:58:34.883+0000] {logging_mixin.py:188} INFO - [2024-08-03T02:58:34.882+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:58:34.901+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:58:35.178+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.304 seconds
+[2024-08-03T02:59:05.534+0000] {processor.py:161} INFO - Started process (PID=830) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:59:05.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T02:59:05.537+0000] {logging_mixin.py:188} INFO - [2024-08-03T02:59:05.537+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:59:05.558+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:59:05.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.044 seconds
+[2024-08-03T02:59:35.959+0000] {processor.py:161} INFO - Started process (PID=840) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:59:35.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T02:59:35.964+0000] {logging_mixin.py:188} INFO - [2024-08-03T02:59:35.963+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:59:35.985+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T02:59:36.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.053 seconds
+[2024-08-03T03:00:06.400+0000] {processor.py:161} INFO - Started process (PID=850) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:00:06.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:00:06.405+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:00:06.405+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:00:06.421+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:00:06.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.052 seconds
+[2024-08-03T03:00:36.692+0000] {processor.py:161} INFO - Started process (PID=861) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:00:36.694+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:00:36.695+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:00:36.695+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:00:36.708+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:00:36.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.037 seconds
+[2024-08-03T03:01:06.939+0000] {processor.py:161} INFO - Started process (PID=871) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:01:06.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:01:06.942+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:01:06.942+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:01:06.961+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:01:06.983+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.049 seconds
+[2024-08-03T03:01:37.658+0000] {processor.py:161} INFO - Started process (PID=881) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:01:37.659+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:01:37.660+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:01:37.660+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:01:37.674+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:01:37.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.035 seconds
+[2024-08-03T03:02:08.141+0000] {processor.py:161} INFO - Started process (PID=891) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:02:08.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:02:08.144+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:02:08.144+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:02:08.162+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:02:08.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.368 seconds
+[2024-08-03T03:02:38.606+0000] {processor.py:161} INFO - Started process (PID=901) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:02:38.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:02:38.608+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:02:38.608+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:02:38.628+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:02:38.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.042 seconds
+[2024-08-03T03:03:09.088+0000] {processor.py:161} INFO - Started process (PID=911) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:03:09.089+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:03:09.092+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:03:09.091+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:03:09.124+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:03:09.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.060 seconds
+[2024-08-03T03:03:39.801+0000] {processor.py:161} INFO - Started process (PID=921) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:03:39.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:03:39.804+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:03:39.804+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:03:39.818+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:03:39.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.036 seconds
+[2024-08-03T03:04:10.295+0000] {processor.py:161} INFO - Started process (PID=930) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:04:10.296+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:04:10.298+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:04:10.298+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:04:10.307+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:04:10.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.034 seconds
+[2024-08-03T03:04:40.549+0000] {processor.py:161} INFO - Started process (PID=940) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:04:40.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:04:40.551+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:04:40.551+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:04:40.558+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:04:40.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.025 seconds
+[2024-08-03T03:05:11.426+0000] {processor.py:161} INFO - Started process (PID=950) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:05:11.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T03:05:11.431+0000] {logging_mixin.py:188} INFO - [2024-08-03T03:05:11.430+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:05:11.438+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T03:05:11.456+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 0.034 seconds
+[2024-08-03T08:32:19.160+0000] {processor.py:161} INFO - Started process (PID=66) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:32:19.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T08:32:19.646+0000] {logging_mixin.py:188} INFO - [2024-08-03T08:32:19.645+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:32:19.856+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:32:21.677+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 3.027 seconds
+[2024-08-03T08:32:55.476+0000] {processor.py:161} INFO - Started process (PID=75) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:32:55.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T08:32:59.129+0000] {logging_mixin.py:188} INFO - [2024-08-03T08:32:59.128+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:33:00.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:33:04.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 9.514 seconds
+[2024-08-03T08:33:42.148+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:33:42.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T08:33:42.671+0000] {logging_mixin.py:188} INFO - [2024-08-03T08:33:42.671+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:33:43.217+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:33:43.587+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 3.267 seconds
+[2024-08-03T08:34:19.467+0000] {processor.py:161} INFO - Started process (PID=92) to work on /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:34:19.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/Sample_data.xlsx for tasks to queue
+[2024-08-03T08:34:19.703+0000] {logging_mixin.py:188} INFO - [2024-08-03T08:34:19.612+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:34:19.861+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/Sample_data.xlsx
+[2024-08-03T08:34:19.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/Sample_data.xlsx took 2.601 seconds

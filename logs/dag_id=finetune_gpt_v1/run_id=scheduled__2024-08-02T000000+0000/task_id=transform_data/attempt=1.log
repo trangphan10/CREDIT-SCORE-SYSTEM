@@ -1,0 +1,13 @@
+[2024-08-03T02:58:49.580+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: finetune_gpt_v1.transform_data scheduled__2024-08-02T00:00:00+00:00 [queued]>
+[2024-08-03T02:58:49.590+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: finetune_gpt_v1.transform_data scheduled__2024-08-02T00:00:00+00:00 [queued]>
+[2024-08-03T02:58:49.591+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-08-03T02:58:49.613+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): transform_data> on 2024-08-02 00:00:00+00:00
+[2024-08-03T02:58:49.622+0000] {standard_task_runner.py:60} INFO - Started process 634 to run task
+[2024-08-03T02:58:49.625+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'finetune_gpt_v1', 'transform_data', 'scheduled__2024-08-02T00:00:00+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/finetune_gpt.py', '--cfg-path', '/tmp/tmp7grz98uv']
+[2024-08-03T02:58:49.629+0000] {standard_task_runner.py:88} INFO - Job 108: Subtask transform_data
+[2024-08-03T02:58:49.696+0000] {task_command.py:423} INFO - Running <TaskInstance: finetune_gpt_v1.transform_data scheduled__2024-08-02T00:00:00+00:00 [running]> on host 763b10b8ea7f
+[2024-08-03T02:58:49.781+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='admin' AIRFLOW_CTX_DAG_ID='finetune_gpt_v1' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-02T00:00:00+00:00'
+[2024-08-03T02:58:49.805+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-08-03T02:58:49.815+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=finetune_gpt_v1, task_id=transform_data, execution_date=20240802T000000, start_date=20240803T025849, end_date=20240803T025849
+[2024-08-03T02:58:49.838+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-03T02:58:49.857+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

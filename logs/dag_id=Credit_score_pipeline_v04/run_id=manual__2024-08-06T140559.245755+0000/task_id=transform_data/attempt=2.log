@@ -1,0 +1,16 @@
+[2024-08-06T14:11:31.050+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline_v04.transform_data manual__2024-08-06T14:05:59.245755+00:00 [queued]>
+[2024-08-06T14:11:31.065+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline_v04.transform_data manual__2024-08-06T14:05:59.245755+00:00 [queued]>
+[2024-08-06T14:11:31.067+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 7
+[2024-08-06T14:11:31.089+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): transform_data> on 2024-08-06 14:05:59.245755+00:00
+[2024-08-06T14:11:31.101+0000] {standard_task_runner.py:60} INFO - Started process 420 to run task
+[2024-08-06T14:11:31.106+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline_v04', 'transform_data', 'manual__2024-08-06T14:05:59.245755+00:00', '--job-id', '191', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmpod0ok4ch']
+[2024-08-06T14:11:31.109+0000] {standard_task_runner.py:88} INFO - Job 191: Subtask transform_data
+[2024-08-06T14:11:31.173+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline_v04.transform_data manual__2024-08-06T14:05:59.245755+00:00 [running]> on host 43471a75e062
+[2024-08-06T14:11:31.283+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline_v04' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-06T14:05:59.245755+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-06T14:05:59.245755+00:00'
+[2024-08-06T14:11:31.638+0000] {python.py:202} INFO - Done. Returned value was: None
+[2024-08-06T14:11:31.650+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=Credit_score_pipeline_v04, task_id=transform_data, execution_date=20240806T140559, start_date=20240806T141131, end_date=20240806T141131
+[2024-08-06T14:11:31.682+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-08-06T14:11:31.725+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/models/baseoperator.py:1201: AirflowProviderDeprecationWarning: Call to deprecated class PostgresOperator. (Please use `***.providers.common.sql.operators.sql.SQLExecuteQueryOperator`.Also, you can provide `hook_params={'schema': <database>}`.)
+  result = cls.__new__(cls)
+
+[2024-08-06T14:11:31.740+0000] {taskinstance.py:3309} INFO - 2 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,40 @@
+[2024-08-05T17:00:29.947+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline_v03.load_data scheduled__2024-08-04T00:00:00+00:00 [queued]>
+[2024-08-05T17:00:29.989+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline_v03.load_data scheduled__2024-08-04T00:00:00+00:00 [queued]>
+[2024-08-05T17:00:29.990+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 8
+[2024-08-05T17:00:30.007+0000] {taskinstance.py:2214} INFO - Executing <Task(MySqlOperator): load_data> on 2024-08-04 00:00:00+00:00
+[2024-08-05T17:00:30.016+0000] {standard_task_runner.py:60} INFO - Started process 1308 to run task
+[2024-08-05T17:00:30.019+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline_v03', 'load_data', 'scheduled__2024-08-04T00:00:00+00:00', '--job-id', '161', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmpv2tduc3g']
+[2024-08-05T17:00:30.021+0000] {standard_task_runner.py:88} INFO - Job 161: Subtask load_data
+[2024-08-05T17:00:30.074+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline_v03.load_data scheduled__2024-08-04T00:00:00+00:00 [running]> on host dd9539b5cbac
+[2024-08-05T17:00:30.150+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline_v03' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T00:00:00+00:00'
+[2024-08-05T17:00:30.152+0000] {sql.py:276} INFO - Executing: 
+        LOAD DATA LOCAL INFILE '/opt/***/dags/clean_train.csv'
+        INTO TABLE credit
+        FIELDS TERMINATED BY ','
+        LINES TERMINATED BY '
+'
+        IGNORE 1 ROWS;
+        
+[2024-08-05T17:00:30.162+0000] {base.py:83} INFO - Using connection ID 'mysql_conn' for task execution.
+[2024-08-05T17:00:30.172+0000] {base.py:83} INFO - Using connection ID 'mysql_conn' for task execution.
+[2024-08-05T17:00:30.179+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 397, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/mysql/hooks/mysql.py", line 195, in get_conn
+    return MySQLdb.connect(**conn_config)
+  File "/home/airflow/.local/lib/python3.8/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)")
+[2024-08-05T17:00:30.189+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline_v03, task_id=load_data, execution_date=20240804T000000, start_date=20240805T170029, end_date=20240805T170030
+[2024-08-05T17:00:30.204+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 161 for task load_data ((2002, "Can't connect to local server through socket '/run/mysqld/mysqld.sock' (2)"); 1308)
+[2024-08-05T17:00:30.233+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-05T17:00:30.249+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

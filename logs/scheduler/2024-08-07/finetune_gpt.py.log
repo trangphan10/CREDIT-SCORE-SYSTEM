@@ -1,0 +1,4 @@
+[2024-08-07T04:48:57.184+0000] {processor.py:161} INFO - Started process (PID=47) to work on /opt/airflow/dags/finetune_gpt.py
+[2024-08-07T04:48:57.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/finetune_gpt.py for tasks to queue
+[2024-08-07T04:48:57.187+0000] {logging_mixin.py:188} INFO - [2024-08-07T04:48:57.187+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/finetune_gpt.py
+[2024-08-07T04:49:27.400+0000] {logging_mixin.py:188} INFO - [2024-08-07T04:49:27.399+0000] {timeout.py:68} ERROR - Process timed out, PID: 47

@@ -1,0 +1,35 @@
+[2024-08-05T16:27:35.646+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline.load_data scheduled__2024-08-03T10:00:00+00:00 [queued]>
+[2024-08-05T16:27:35.657+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline.load_data scheduled__2024-08-03T10:00:00+00:00 [queued]>
+[2024-08-05T16:27:35.658+0000] {taskinstance.py:2193} INFO - Starting attempt 5 of 6
+[2024-08-05T16:27:35.679+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): load_data> on 2024-08-03 10:00:00+00:00
+[2024-08-05T16:27:35.702+0000] {standard_task_runner.py:60} INFO - Started process 529 to run task
+[2024-08-05T16:27:35.706+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline', 'load_data', 'scheduled__2024-08-03T10:00:00+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmp5jrg6yjq']
+[2024-08-05T16:27:35.709+0000] {standard_task_runner.py:88} INFO - Job 144: Subtask load_data
+[2024-08-05T16:27:35.763+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline.load_data scheduled__2024-08-03T10:00:00+00:00 [running]> on host dd9539b5cbac
+[2024-08-05T16:27:35.850+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-03T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-03T10:00:00+00:00'
+[2024-08-05T16:27:35.908+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/credit_score.py", line 70, in load_data_to_DB
+    engine = get_connection()
+  File "/opt/airflow/dags/credit_score.py", line 62, in get_connection
+    return create_engine(
+  File "<string>", line 2, in create_engine
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/deprecations.py", line 375, in warned
+    return fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/create.py", line 544, in create_engine
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 80, in dbapi
+    return __import__("pymysql")
+ModuleNotFoundError: No module named 'pymysql'
+[2024-08-05T16:27:35.917+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline, task_id=load_data, execution_date=20240803T100000, start_date=20240805T162735, end_date=20240805T162735
+[2024-08-05T16:27:35.946+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 144 for task load_data (No module named 'pymysql'; 529)
+[2024-08-05T16:27:35.999+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-05T16:27:36.022+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

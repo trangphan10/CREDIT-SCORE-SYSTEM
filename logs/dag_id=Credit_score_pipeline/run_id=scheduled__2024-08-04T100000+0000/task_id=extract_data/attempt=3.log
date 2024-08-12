@@ -1,0 +1,30 @@
+[2024-08-05T15:43:59.893+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline.extract_data scheduled__2024-08-04T10:00:00+00:00 [queued]>
+[2024-08-05T15:43:59.902+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline.extract_data scheduled__2024-08-04T10:00:00+00:00 [queued]>
+[2024-08-05T15:43:59.902+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 8
+[2024-08-05T15:44:00.065+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_data> on 2024-08-04 10:00:00+00:00
+[2024-08-05T15:44:00.073+0000] {standard_task_runner.py:60} INFO - Started process 2312 to run task
+[2024-08-05T15:44:00.077+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline', 'extract_data', 'scheduled__2024-08-04T10:00:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmp6v9j6omf']
+[2024-08-05T15:44:00.079+0000] {standard_task_runner.py:88} INFO - Job 120: Subtask extract_data
+[2024-08-05T15:44:00.130+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline.extract_data scheduled__2024-08-04T10:00:00+00:00 [running]> on host 763b10b8ea7f
+[2024-08-05T15:44:00.205+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2024-08-04T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-04T10:00:00+00:00'
+[2024-08-05T15:44:00.410+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/credit_score.py", line 20, in extract_csv_data
+    file = pd.read_excel(file_csv)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/io/excel/_base.py", line 1500, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+[2024-08-05T15:44:00.425+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline, task_id=extract_data, execution_date=20240804T100000, start_date=20240805T154359, end_date=20240805T154400
+[2024-08-05T15:44:00.439+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 120 for task extract_data (Excel file format cannot be determined, you must specify an engine manually.; 2312)
+[2024-08-05T15:44:00.451+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-05T15:44:00.474+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
