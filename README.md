@@ -12,6 +12,7 @@ Dự án này nhằm mục đích xây dựng một quy trình tự động cho 
 Đầu tiên, clone repository về máy:
 ```bash
 git clone [[URL repository]](https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git)
+```
 ### 2. Chạy quy trình tự động bằng Airflow
 
 - Đảm bảo rằng bạn đã cài đặt Docker và Apache Airflow trên Docker.
@@ -19,8 +20,10 @@ git clone [[URL repository]](https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.
 
   ```bash
   docker-compose up
+  ```
 
-### 2. Chạy ứng dụng Streamlit
+### 3. Chạy ứng dụng Streamlit
   ```bash
 streamlit run ./credit_score.py
+ ```
 
