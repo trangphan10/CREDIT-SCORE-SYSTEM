@@ -23,14 +23,8 @@ st.set_page_config(
 
 # Tải mô hình và bộ chuẩn hóa
 scaler = pickle.load(open('G:\\APACHE_AIRFLOW\\dags\\StandardScaler.pickle', 'rb'))
-model = pickle.load(open('G:\\APACHE_AIRFLOW\\dags\\LogisticRegression.pickle', 'rb'))
+model = pickle.load(open('G:\\APACHE_AIRFLOW\\dags\\RandomForest.pickle', 'rb'))
 label_encode = pickle.load(open('G:\\APACHE_AIRFLOW\\dags\\LabelEncoder.pickle','rb'))
-
-# Hàm biến đổi dữ liệu đầu vào
-def transform(x):
-    x.dropna(axis=0, how='any', inplace=True)
-    x.drop('DEBTINC', axis=1, inplace=True)
-    return x
 
 def compute_credit_score(p):
     factor = 25 / np.log(2)
@@ -56,33 +50,6 @@ def user_input_data():
     NINQ_VAL = st.sidebar.slider('NINQ', 0, 20, 0, 1)
     CLNO_VAL = st.sidebar.slider('CLNO', 0, 75, 0, 1)
     DEBTINC_VAL = st.sidebar.slider('DEBTINC', 0, 205, 0, 1)
-    
-    debtcon = 0
-    homeimp = 0
-    office = 0 
-    profexe = 0 
-    mgr = 0 
-    self = 0 
-    sales = 0 
-    other = 0 
-    if REASON_VAL == 'DebtCon': 
-        debtcon = 1 
-    else : 
-        homeimp = 0 
-        
-    if JOB_VAL == 'Office': 
-        office = 1 
-    elif JOB_VAL == 'ProfExe': 
-        profexe = 1 
-    elif JOB_VAL == 'Mgr': 
-        mgr = 1 
-    elif JOB_VAL == 'Self': 
-        self = 1 
-    elif JOB_VAL == 'Sales': 
-        sales = 1 
-    elif JOB_VAL == 'Other': 
-        other = 1
-        
         
     # Tạo dataframe từ dữ liệu người dùng nhập vào
     data = {
@@ -96,14 +63,8 @@ def user_input_data():
         'NINQ': NINQ_VAL,
         'CLNO': CLNO_VAL,
         'DEBTINC': DEBTINC_VAL,
-        'REASON_DebtCon': debtcon,
-        'REASON_HomeImp': homeimp,
-        'JOB_Mgr':mgr, 
-        'JOB_Office':office, 
-        'JOB_Other':other,
-        'JOB_ProfExe':profexe,
-        'JOB_Sales':sales,
-        'JOB_Self':self
+        'REASON': REASON_VAL,
+        'JOB': JOB_VAL
     }
     input_data = pd.DataFrame(data, index=[0])
     
@@ -143,16 +104,14 @@ with col2:
 with col1:
     if st.button('Make Prediction'):
         output = df.copy()
-        output = transform(output)
-        label = LabelEncoder()
         for column in output.columns:
             if output[column].dtype == 'object':
                 output[column] = label_encode.fit_transform(output[column])
         scaled_features = scaler.fit_transform(output)
 
         scaled_features_df = pd.DataFrame(scaled_features, index=output.index, columns=output.columns)
-        credit_score = compute_credit_score(model.predict_proba(output)[0][1])
-        if credit_score < 300:
+        credit_score = compute_credit_score(model.predict_proba(scaled_features)[0][1])
+        if 500 <= credit_score <= 600:
             st.balloons()
             t1 = plt.Polygon([[5, 0.5], [5.5, 0], [4.5, 0]], color='black')
             st.markdown('Your credit score is **GOOD**! Congratulations!')
@@ -161,7 +120,7 @@ with col1:
             t1 = plt.Polygon([[3, 0.5], [3.5, 0], [2.5, 0]], color='black')
             st.markdown('Your credit score is **REGULAR**.')
             st.markdown('This credit score indicates that this person is likely to repay a loan, but can occasionally miss some payments. Meaning that the risk of giving them credit is medium.')
-        elif 500 <= credit_score <= 600:
+        elif credit_score < 300:
             t1 = plt.Polygon([[1, 0.5], [1.5, 0], [0.5, 0]], color='black')
             st.markdown('Your credit score is **POOR**.')
             st.markdown('This credit score indicates that this person is unlikely to repay a loan, so the risk of lending them credit is high.')

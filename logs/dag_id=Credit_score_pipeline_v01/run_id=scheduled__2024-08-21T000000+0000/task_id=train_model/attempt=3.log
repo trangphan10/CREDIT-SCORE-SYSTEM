@@ -1,0 +1,41 @@
+[2024-08-22T13:45:49.277+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline_v01.train_model scheduled__2024-08-21T00:00:00+00:00 [queued]>
+[2024-08-22T13:45:49.286+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline_v01.train_model scheduled__2024-08-21T00:00:00+00:00 [queued]>
+[2024-08-22T13:45:49.287+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 6
+[2024-08-22T13:45:49.302+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): train_model> on 2024-08-21 00:00:00+00:00
+[2024-08-22T13:45:49.313+0000] {standard_task_runner.py:60} INFO - Started process 179 to run task
+[2024-08-22T13:45:49.316+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline_v01', 'train_model', 'scheduled__2024-08-21T00:00:00+00:00', '--job-id', '249', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmpqho1_tc8']
+[2024-08-22T13:45:49.319+0000] {standard_task_runner.py:88} INFO - Job 249: Subtask train_model
+[2024-08-22T13:45:49.376+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline_v01.train_model scheduled__2024-08-21T00:00:00+00:00 [running]> on host 056d689e0f27
+[2024-08-22T13:45:49.462+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline_v01' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2024-08-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-21T00:00:00+00:00'
+[2024-08-22T13:45:49.520+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3653, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 147, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 176, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'BAD'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/credit_score.py", line 106, in train_model
+    y = data['BAD']
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/frame.py", line 3761, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/airflow/.local/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3655, in get_loc
+    raise KeyError(key) from err
+KeyError: 'BAD'
+[2024-08-22T13:45:49.536+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline_v01, task_id=train_model, execution_date=20240821T000000, start_date=20240822T134549, end_date=20240822T134549
+[2024-08-22T13:45:49.552+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 249 for task train_model ('BAD'; 179)
+[2024-08-22T13:45:49.571+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-22T13:45:49.588+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
