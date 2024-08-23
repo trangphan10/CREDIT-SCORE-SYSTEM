@@ -4,6 +4,34 @@
 ## Mô Tả Dự Án
 Đề tài này tập trung vào việc xây dựng và triển khai một hệ thống tự động nhằm đánh giá điểm tín dụng của khách hàng và một lowcode web phê duyệt khoản vay sau khi có dữ liệu khách hàng (đã tính điểm tín dụng).
 
+## Bộ dữ liệu : Hmeq.csv 
+- **Bộ dữ liệu được sử dụng**: [Link Google Drive](https://drive.google.com/file/d/14gsJbCfE_KCCmZzibXdyyNV_N4fXbZEq/view?usp=drive_link)
+- **Mô tả**: Bộ dữ liệu gồm 5960 bản ghi với 13 trường dữ liệu. Mỗi bản ghi đại diện cho thông tin khách hàng có thẻ tín dụng ở ngân hàng. Mỗi người được phân loại tín dụng tốt hay xấu dựa trên một tập thuộc tính.
+
+- **Các trường dữ liệu**:
+  - **BAD**:
+    - 1: Người nộp đơn đã vỡ nợ hoặc nợ quá hạn nghiêm trọng
+    - 0: Người nộp đơn đã thanh toán khoản vay
+  - **LOAN**: Số tiền yêu cầu vay
+  - **MORTDUE**: Số tiền nợ còn lại trên khoản thế chấp hiện tại
+  - **VALUE**: Giá trị tài sản hiện tại
+  - **REASON**: Lý do vay
+    - DebtCon: Debt consolidation (ghép nợ)
+    - HomeImp: Home improvement (sửa sang nhà cửa)
+  - **JOB**: Loại công việc, bao gồm các nhóm:
+    - "Office"
+    - "Sales"
+    - "Manager"
+    - "Professional Executive"
+    - "Other"
+  - **YOJ**: Số năm làm việc tại công việc hiện tại
+  - **DEROG**: Số lượng báo cáo vỡ nợ
+  - **DELINQ**: Số hạn mức tín dụng quá hạn
+  - **CLAGE**: Tuổi của hạn mức tín dụng lâu nhất tính theo tháng
+  - **NINQ**: Số lượng yêu cầu tín dụng gần đây
+  - **CLNO**: Số lượng hạn mức tín dụng
+  - **DEBTINC**: Tỷ lệ nợ/thu nhập
+
 ## Các bước xây dựng và công nghệ sử dụng
 1. Xây dựng bộ quy tắc cho quy trình tự động: Notebook/experiment.ipynb
 2. Xây dựng quy trình tự động và lập lịch: Airflow + Docker
