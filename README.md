@@ -26,7 +26,7 @@ docker build -t apache_airflow .
 ```
 - Chạy lệnh sau để khởi động Airflow:
 ```bash
-  docker-compose up
+docker-compose up
 ```
 
 ### 3. Chạy ứng dụng Streamlit
