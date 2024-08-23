@@ -4,8 +4,7 @@
 ## Mô Tả Dự Án
 Đề tài này tập trung vào việc xây dựng và triển khai một hệ thống tự động nhằm đánh giá điểm tín dụng của khách hàng và một lowcode web phê duyệt khoản vay sau khi có dữ liệu khách hàng (đã tính điểm tín dụng).
 
-## Bộ dữ liệu : Hmeq.csv 
-- **Bộ dữ liệu được sử dụng**: [Link Google Drive](https://drive.google.com/file/d/14gsJbCfE_KCCmZzibXdyyNV_N4fXbZEq/view?usp=drive_link)
+## Bộ dữ liệu : Data/hmeq.csv 
 - **Mô tả**: Bộ dữ liệu gồm 5960 bản ghi với 13 trường dữ liệu. Mỗi bản ghi đại diện cho thông tin khách hàng có thẻ tín dụng ở ngân hàng. Mỗi người được phân loại tín dụng tốt hay xấu dựa trên một tập thuộc tính.
 
 - **Các trường dữ liệu**:
