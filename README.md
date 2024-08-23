@@ -30,6 +30,9 @@ docker-compose up
 
 ### 3. Chạy ứng dụng Streamlit
 ```bash
+cd streamlit
 streamlit run ./credit_score.py
 ```
+### 4. Chạy ứng dụng Apex 
+Truy cập vào thư mục Apex và làm theo hướng dẫn
 
