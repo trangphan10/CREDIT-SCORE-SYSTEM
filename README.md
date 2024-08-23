@@ -9,7 +9,7 @@ Dự án này tập trung vào việc phát triển một quy trình tự độn
 ## Các bước xây dựng và công nghệ sử dụng
 1. Xây dựng bộ quy tắc cho quy trình tự động: Notebook/experiment.ipynb
 2. Xây dựng quy trình tự động và lập lịch: Airflow + Docker
-3. Xây dựng ứng dụng web để trực quan hoạt động mô hình: Streamlit
+3. Xây dựng ứng dụng web để trực quan hoạt động mô hình: Streamlit + SQLite
 
 ## Hướng Dẫn Chạy Dự Án
 
