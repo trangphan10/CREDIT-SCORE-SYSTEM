@@ -1,4 +1,4 @@
-** GIAO DIỆN THẨM ĐỊNH MÔ HÌNH CHẤM ĐIỂM TÍN DỤNG ** 
+**GIAO DIỆN THẨM ĐỊNH MÔ HÌNH CHẤM ĐIỂM TÍN DỤNG** 
 1. Chạy file credit_score.py để xem giao diện web chấm điểm tín dụng 
 ```bash 
 cd streamlit 
