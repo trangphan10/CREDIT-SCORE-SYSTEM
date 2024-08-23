@@ -17,7 +17,7 @@ git clone https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git
 
 - Đầu tiên cài đặt Docker và sau đó build image Apache Airflow trên Docker.
 ```bash
-    docker build -t apache_airflow .
+docker build -t apache_airflow .
 ```
 - Chạy lệnh sau để khởi động Airflow:
 ```bash
