@@ -1,0 +1,42 @@
+[2024-08-23T09:44:16.209+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline_v03.test_model manual__2024-08-23T09:43:59.799315+00:00 [queued]>
+[2024-08-23T09:44:16.230+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline_v03.test_model manual__2024-08-23T09:43:59.799315+00:00 [queued]>
+[2024-08-23T09:44:16.231+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-08-23T09:44:16.262+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): test_model> on 2024-08-23 09:43:59.799315+00:00
+[2024-08-23T09:44:16.274+0000] {standard_task_runner.py:60} INFO - Started process 507 to run task
+[2024-08-23T09:44:16.303+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline_v03', 'test_model', 'manual__2024-08-23T09:43:59.799315+00:00', '--job-id', '306', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmp6a34gg9l']
+[2024-08-23T09:44:16.483+0000] {standard_task_runner.py:88} INFO - Job 306: Subtask test_model
+[2024-08-23T09:44:16.606+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline_v03.test_model manual__2024-08-23T09:43:59.799315+00:00 [running]> on host f022a2ec5bf1
+[2024-08-23T09:44:16.789+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline_v03' AIRFLOW_CTX_TASK_ID='test_model' AIRFLOW_CTX_EXECUTION_DATE='2024-08-23T09:43:59.799315+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-23T09:43:59.799315+00:00'
+[2024-08-23T09:44:16.928+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/credit_score.py", line 186, in test_model
+    y_pred = model.predict(x_test)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 823, in predict
+    proba = self.predict_proba(X)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 865, in predict_proba
+    X = self._validate_X_predict(X)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 599, in _validate_X_predict
+    X = self._validate_data(X, dtype=DTYPE, accept_sparse="csr", reset=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/base.py", line 580, in _validate_data
+    self._check_feature_names(X, reset=reset)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/base.py", line 507, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Unnamed: 0
+
+[2024-08-23T09:44:16.945+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline_v03, task_id=test_model, execution_date=20240823T094359, start_date=20240823T094416, end_date=20240823T094416
+[2024-08-23T09:44:16.959+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 306 for task test_model (The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Unnamed: 0
+; 507)
+[2024-08-23T09:44:17.010+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-23T09:44:17.038+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

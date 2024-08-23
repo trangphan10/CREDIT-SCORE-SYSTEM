@@ -1,0 +1,28 @@
+[2024-08-22T14:41:14.318+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline_v02.test_model manual__2024-08-22T14:39:49.544285+00:00 [queued]>
+[2024-08-22T14:41:14.328+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline_v02.test_model manual__2024-08-22T14:39:49.544285+00:00 [queued]>
+[2024-08-22T14:41:14.329+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 6
+[2024-08-22T14:41:14.346+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): test_model> on 2024-08-22 14:39:49.544285+00:00
+[2024-08-22T14:41:14.355+0000] {standard_task_runner.py:60} INFO - Started process 206 to run task
+[2024-08-22T14:41:14.358+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline_v02', 'test_model', 'manual__2024-08-22T14:39:49.544285+00:00', '--job-id', '262', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmp52w3ku1p']
+[2024-08-22T14:41:14.361+0000] {standard_task_runner.py:88} INFO - Job 262: Subtask test_model
+[2024-08-22T14:41:14.412+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline_v02.test_model manual__2024-08-22T14:39:49.544285+00:00 [running]> on host 056d689e0f27
+[2024-08-22T14:41:14.500+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline_v02' AIRFLOW_CTX_TASK_ID='test_model' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T14:39:49.544285+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-22T14:39:49.544285+00:00'
+[2024-08-22T14:41:14.687+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/credit_score.py", line 123, in test_model
+    test_data = transform(test_data)
+  File "/opt/airflow/dags/credit_score.py", line 67, in transform
+    if data.duplicated().any():
+AttributeError: '_io.TextIOWrapper' object has no attribute 'duplicated'
+[2024-08-22T14:41:14.698+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline_v02, task_id=test_model, execution_date=20240822T143949, start_date=20240822T144114, end_date=20240822T144114
+[2024-08-22T14:41:14.711+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 262 for task test_model ('_io.TextIOWrapper' object has no attribute 'duplicated'; 206)
+[2024-08-22T14:41:14.733+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-22T14:41:14.749+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

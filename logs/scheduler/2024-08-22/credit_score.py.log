@@ -317,3 +317,347 @@
 [2024-08-22T13:50:19.141+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:50:19.140+0000] {dag.py:3047} INFO - Sync 1 DAGs
 [2024-08-22T13:50:19.160+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:50:19.160+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
 [2024-08-22T13:50:19.190+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.884 seconds
+[2024-08-22T13:50:49.499+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:50:49.501+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:50:49.504+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:50:49.503+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:51:11.885+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:51:11.908+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:51:11.907+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:51:11.928+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:51:11.927+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:51:11.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 22.462 seconds
+[2024-08-22T13:51:42.197+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:51:42.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:51:42.201+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:51:42.201+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:51:43.064+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:51:43.087+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:51:43.086+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:51:43.106+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:51:43.106+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:51:43.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.936 seconds
+[2024-08-22T13:52:13.338+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:52:13.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:52:13.342+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:52:13.341+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:52:14.084+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:52:14.107+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:52:14.107+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:52:14.129+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:52:14.129+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:52:14.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.815 seconds
+[2024-08-22T13:52:44.408+0000] {processor.py:161} INFO - Started process (PID=262) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:52:44.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:52:44.411+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:52:44.410+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:52:45.171+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:52:45.194+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:52:45.193+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:52:45.214+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:52:45.214+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:52:45.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.833 seconds
+[2024-08-22T13:53:15.373+0000] {processor.py:161} INFO - Started process (PID=277) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:53:15.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:53:15.376+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:53:15.376+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:53:16.117+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:53:16.141+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:53:16.140+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:53:16.163+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:53:16.162+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:53:16.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.814 seconds
+[2024-08-22T13:53:46.391+0000] {processor.py:161} INFO - Started process (PID=292) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:53:46.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:53:46.394+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:53:46.394+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:53:47.192+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:53:47.216+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:53:47.215+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:53:47.235+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:53:47.234+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:53:47.258+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.871 seconds
+[2024-08-22T13:54:17.492+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:54:17.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:54:17.496+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:54:17.496+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:54:18.444+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:54:18.468+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:54:18.467+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:54:18.488+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:54:18.488+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:54:18.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.022 seconds
+[2024-08-22T13:54:48.701+0000] {processor.py:161} INFO - Started process (PID=316) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:54:48.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:54:48.704+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:54:48.703+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:54:49.466+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:54:49.491+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:54:49.490+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:54:49.514+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:54:49.514+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:54:49.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.842 seconds
+[2024-08-22T13:55:19.788+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:55:19.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:55:19.793+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:55:19.792+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:55:20.626+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:55:20.649+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:55:20.649+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:55:20.671+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:55:20.671+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:55:20.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.911 seconds
+[2024-08-22T13:55:50.947+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:55:50.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:55:50.950+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:55:50.950+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:55:51.828+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:55:51.853+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:55:51.852+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:55:51.875+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:55:51.875+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:55:51.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.951 seconds
+[2024-08-22T13:56:22.142+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:56:22.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:56:22.145+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:56:22.145+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:56:23.025+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:56:23.048+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:56:23.048+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:56:23.068+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:56:23.068+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:56:23.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.953 seconds
+[2024-08-22T13:56:53.335+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:56:53.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:56:53.339+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:56:53.338+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:56:54.187+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:56:54.209+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:56:54.208+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:56:54.229+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:56:54.229+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:56:54.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.922 seconds
+[2024-08-22T13:57:24.550+0000] {processor.py:161} INFO - Started process (PID=379) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:57:24.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:57:24.553+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:57:24.553+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:57:25.703+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:57:25.997+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:57:25.997+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:57:26.021+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:57:26.020+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:57:26.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.496 seconds
+[2024-08-22T13:57:56.277+0000] {processor.py:161} INFO - Started process (PID=394) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:57:56.279+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:57:56.282+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:57:56.282+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:57:57.101+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:57:57.125+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:57:57.124+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:57:57.144+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:57:57.144+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:57:57.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.903 seconds
+[2024-08-22T13:58:27.398+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:58:27.399+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:58:27.401+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:58:27.400+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:58:28.224+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:58:28.246+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:58:28.246+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:58:28.270+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:58:28.270+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:58:28.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.897 seconds
+[2024-08-22T13:58:58.513+0000] {processor.py:161} INFO - Started process (PID=418) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:58:58.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:58:58.518+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:58:58.518+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:58:59.350+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:58:59.373+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:58:59.372+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:58:59.392+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:58:59.392+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:58:59.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.905 seconds
+[2024-08-22T13:59:29.601+0000] {processor.py:161} INFO - Started process (PID=427) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T13:59:29.602+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T13:59:29.604+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:59:29.603+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:59:30.387+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T13:59:30.411+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:59:30.410+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T13:59:30.432+0000] {logging_mixin.py:188} INFO - [2024-08-22T13:59:30.432+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T13:59:30.456+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.859 seconds
+[2024-08-22T14:00:00.551+0000] {processor.py:161} INFO - Started process (PID=442) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:00:00.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:00:00.555+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:00:00.554+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:00:01.671+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:00:01.701+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:00:01.700+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:00:01.725+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:00:01.724+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:00:01.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.204 seconds
+[2024-08-22T14:00:31.846+0000] {processor.py:161} INFO - Started process (PID=457) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:00:31.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:00:31.849+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:00:31.849+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:00:32.765+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:00:32.789+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:00:32.788+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:00:32.812+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:00:32.812+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:00:32.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.995 seconds
+[2024-08-22T14:01:03.368+0000] {processor.py:161} INFO - Started process (PID=466) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:01:03.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:01:03.373+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:01:03.372+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:01:05.502+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:01:05.535+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:01:05.534+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:01:05.566+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:01:05.565+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:01:05.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 2.234 seconds
+[2024-08-22T14:01:35.848+0000] {processor.py:161} INFO - Started process (PID=481) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:01:35.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:01:35.850+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:01:35.850+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:01:36.965+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v01' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:01:37.013+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:01:37.012+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:01:37.200+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:01:37.200+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v01 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:01:37.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.382 seconds
+[2024-08-22T14:37:18.341+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:37:18.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:37:18.382+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:37:18.381+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:37:40.605+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:37:41.890+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:37:41.889+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:37:41.927+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:37:41.926+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-21 00:00:00+00:00, run_after=2024-08-22 00:00:00+00:00
+[2024-08-22T14:37:42.214+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 23.879 seconds
+[2024-08-22T14:38:05.213+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:38:05.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:38:05.216+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:38:05.215+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:38:06.956+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:38:06.978+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:38:06.978+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:38:07.006+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:38:07.006+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:38:07.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.815 seconds
+[2024-08-22T14:38:37.625+0000] {processor.py:161} INFO - Started process (PID=61) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:38:37.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:38:37.630+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:38:37.630+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:38:56.947+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:38:57.204+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:38:57.204+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:38:58.056+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:38:58.055+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:38:58.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 20.524 seconds
+[2024-08-22T14:39:28.830+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:39:28.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:39:28.834+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:39:28.833+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:39:58.901+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:39:58.899+0000] {timeout.py:68} ERROR - Process timed out, PID: 77
+[2024-08-22T14:40:30.147+0000] {processor.py:161} INFO - Started process (PID=93) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:40:30.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:40:30.149+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:40:30.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:40:31.531+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:40:31.670+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:40:31.669+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:40:31.691+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:40:31.691+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:40:31.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.573 seconds
+[2024-08-22T14:41:01.829+0000] {processor.py:161} INFO - Started process (PID=108) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:41:01.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:41:01.831+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:41:01.830+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:41:04.194+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:41:04.452+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:41:04.451+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:41:04.501+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:41:04.500+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:41:04.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 2.718 seconds
+[2024-08-22T14:41:35.100+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:41:35.101+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:41:35.102+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:41:35.102+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:41:36.358+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:41:36.384+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:41:36.383+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:41:36.405+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:41:36.404+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:41:36.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.328 seconds
+[2024-08-22T14:42:06.640+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:06.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:42:06.642+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:06.641+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:07.447+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:07.469+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:07.469+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:42:07.490+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:07.490+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:42:07.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.874 seconds
+[2024-08-22T14:42:28.488+0000] {processor.py:161} INFO - Started process (PID=147) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:28.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:42:28.490+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:28.490+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:29.427+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:29.451+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:29.450+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:42:29.475+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:29.475+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:42:29.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.018 seconds
+[2024-08-22T14:42:59.704+0000] {processor.py:161} INFO - Started process (PID=156) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:42:59.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:42:59.706+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:42:59.705+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:43:00.525+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:43:00.562+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:43:00.561+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:43:00.581+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:43:00.581+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:43:00.605+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.904 seconds
+[2024-08-22T14:43:30.947+0000] {processor.py:161} INFO - Started process (PID=171) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:43:30.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:43:30.949+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:43:30.949+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:43:31.766+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:43:31.790+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:43:31.789+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:43:31.813+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:43:31.813+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:43:31.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.894 seconds
+[2024-08-22T14:44:02.075+0000] {processor.py:161} INFO - Started process (PID=186) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:44:02.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:44:02.079+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:44:02.078+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:44:02.873+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:44:02.896+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:44:02.896+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:44:02.917+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:44:02.917+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:44:02.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.872 seconds
+[2024-08-22T14:44:33.176+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:44:33.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:44:33.178+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:44:33.178+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:44:34.068+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:44:34.089+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:44:34.089+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:44:34.109+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:44:34.109+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:44:34.131+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.960 seconds
+[2024-08-22T14:45:04.353+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:45:04.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:45:04.357+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:45:04.356+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:45:05.969+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:45:06.162+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:45:06.162+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:45:06.194+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:45:06.194+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:45:06.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.924 seconds
+[2024-08-22T14:45:36.506+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:45:36.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:45:36.508+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:45:36.508+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:45:37.374+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:45:37.397+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:45:37.397+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:45:37.417+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:45:37.417+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:45:37.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.941 seconds
+[2024-08-22T14:46:07.741+0000] {processor.py:161} INFO - Started process (PID=234) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:46:07.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:46:07.744+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:46:07.743+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:46:08.542+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:46:08.566+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:46:08.566+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:46:08.591+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:46:08.591+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:46:08.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.878 seconds
+[2024-08-22T14:46:38.847+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:46:38.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:46:38.849+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:46:38.849+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:46:39.615+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:46:39.638+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:46:39.638+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:46:39.659+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:46:39.659+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:46:39.684+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.841 seconds
+[2024-08-22T14:47:09.921+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:47:09.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:47:09.923+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:47:09.923+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:47:10.716+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:47:10.738+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:47:10.737+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:47:10.759+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:47:10.759+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:47:10.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 0.865 seconds
+[2024-08-22T14:54:27.758+0000] {processor.py:161} INFO - Started process (PID=64) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:54:27.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:54:27.763+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:54:27.763+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:54:36.065+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:54:36.361+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:54:36.361+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T14:54:36.386+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:54:36.386+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T14:54:36.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 8.663 seconds
+[2024-08-22T14:55:06.937+0000] {processor.py:161} INFO - Started process (PID=80) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:55:06.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:55:06.941+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:55:06.941+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T14:56:03.971+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:56:03.970+0000] {timeout.py:68} ERROR - Process timed out, PID: 80
+[2024-08-22T14:56:04.308+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function _collection_gced at 0x7fdc852a6940>
+[2024-08-22T14:56:04.309+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2024-08-22T14:56:04.450+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/event/registry.py", line 53, in _collection_gced
+[2024-08-22T14:56:04.451+0000] {logging_mixin.py:188} WARNING -     def _collection_gced(ref):
+[2024-08-22T14:56:04.451+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2024-08-22T14:56:08.912+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2024-08-22T14:56:08.913+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/credit_score.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.2/best-practices.html#reducing-dag-complexity, PID: 80
+[2024-08-22T14:56:50.466+0000] {processor.py:161} INFO - Started process (PID=94) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T14:56:50.469+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T14:56:50.655+0000] {logging_mixin.py:188} INFO - [2024-08-22T14:56:50.654+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:26:57.875+0000] {processor.py:161} INFO - Started process (PID=69) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:26:58.910+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:26:59.157+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:26:59.157+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:27:29.672+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:27:29.672+0000] {timeout.py:68} ERROR - Process timed out, PID: 69
+[2024-08-22T16:27:56.288+0000] {processor.py:161} INFO - Started process (PID=46) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:27:56.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:27:56.291+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:27:56.291+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:28:22.169+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:28:22.781+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:28:22.780+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T16:28:22.850+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:28:22.850+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T16:28:22.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 26.640 seconds
+[2024-08-22T16:28:53.895+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:28:53.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:28:53.898+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:28:53.898+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:29:00.057+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:29:00.082+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:29:00.081+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T16:29:00.109+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:29:00.109+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T16:29:00.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 6.243 seconds
+[2024-08-22T16:29:30.231+0000] {processor.py:161} INFO - Started process (PID=76) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:29:30.232+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:29:30.234+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:29:30.234+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:29:31.064+0000] {processor.py:840} INFO - DAG(s) 'Credit_score_pipeline_v02' retrieved from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:29:31.086+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:29:31.085+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-08-22T16:29:31.682+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:29:31.682+0000] {dag.py:3834} INFO - Setting next_dagrun for Credit_score_pipeline_v02 to 2024-08-22 00:00:00+00:00, run_after=2024-08-23 00:00:00+00:00
+[2024-08-22T16:29:31.715+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/credit_score.py took 1.488 seconds
+[2024-08-22T16:30:02.028+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:30:02.030+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:30:02.032+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:30:02.031+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:30:32.235+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:30:32.233+0000] {timeout.py:68} ERROR - Process timed out, PID: 91
+[2024-08-22T16:31:26.004+0000] {processor.py:161} INFO - Started process (PID=106) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:31:26.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:31:28.519+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:31:28.318+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:32:03.940+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:32:03.940+0000] {timeout.py:68} ERROR - Process timed out, PID: 106
+[2024-08-22T16:34:10.754+0000] {processor.py:161} INFO - Started process (PID=113) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:34:12.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:34:13.037+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:34:13.030+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:35:15.741+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:35:15.722+0000] {timeout.py:68} ERROR - Process timed out, PID: 113
+[2024-08-22T16:36:31.726+0000] {processor.py:161} INFO - Started process (PID=126) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:36:32.949+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:36:45.240+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:36:44.908+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:37:29.054+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:37:29.054+0000] {timeout.py:68} ERROR - Process timed out, PID: 126
+[2024-08-22T16:38:48.817+0000] {processor.py:161} INFO - Started process (PID=132) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:38:48.925+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:38:50.034+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:38:49.162+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:39:46.726+0000] {processor.py:161} INFO - Started process (PID=144) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:39:47.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:39:47.023+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:39:47.022+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py
+[2024-08-22T16:41:04.834+0000] {processor.py:161} INFO - Started process (PID=151) to work on /opt/airflow/dags/credit_score.py
+[2024-08-22T16:41:05.669+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/credit_score.py for tasks to queue
+[2024-08-22T16:41:08.511+0000] {logging_mixin.py:188} INFO - [2024-08-22T16:41:06.331+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/credit_score.py

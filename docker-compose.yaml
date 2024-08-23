@@ -99,6 +99,12 @@ services:
       retries: 5
       start_period: 5s
     restart: always
+  # mlflow:
+  #   build:
+  #     dockerfile: opt/airflow/mlflow/Dockerfile
+  #   ports:
+  #     - 5000:5000
+
   redis:
     image: redis:latest
     expose:

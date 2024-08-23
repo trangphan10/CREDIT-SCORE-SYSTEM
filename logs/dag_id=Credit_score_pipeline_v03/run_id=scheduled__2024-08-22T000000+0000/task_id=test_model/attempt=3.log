@@ -1,0 +1,26 @@
+[2024-08-23T09:43:42.006+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Credit_score_pipeline_v03.test_model scheduled__2024-08-22T00:00:00+00:00 [queued]>
+[2024-08-23T09:43:42.015+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Credit_score_pipeline_v03.test_model scheduled__2024-08-22T00:00:00+00:00 [queued]>
+[2024-08-23T09:43:42.016+0000] {taskinstance.py:2193} INFO - Starting attempt 3 of 8
+[2024-08-23T09:43:42.036+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): test_model> on 2024-08-22 00:00:00+00:00
+[2024-08-23T09:43:42.045+0000] {standard_task_runner.py:60} INFO - Started process 391 to run task
+[2024-08-23T09:43:42.048+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'Credit_score_pipeline_v03', 'test_model', 'scheduled__2024-08-22T00:00:00+00:00', '--job-id', '300', '--raw', '--subdir', 'DAGS_FOLDER/credit_score.py', '--cfg-path', '/tmp/tmpncmi4bq8']
+[2024-08-23T09:43:42.052+0000] {standard_task_runner.py:88} INFO - Job 300: Subtask test_model
+[2024-08-23T09:43:42.118+0000] {task_command.py:423} INFO - Running <TaskInstance: Credit_score_pipeline_v03.test_model scheduled__2024-08-22T00:00:00+00:00 [running]> on host f022a2ec5bf1
+[2024-08-23T09:43:42.226+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Credit_score_pipeline_v03' AIRFLOW_CTX_TASK_ID='test_model' AIRFLOW_CTX_EXECUTION_DATE='2024-08-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-22T00:00:00+00:00'
+[2024-08-23T09:43:42.229+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/credit_score.py", line 181, in test_model
+    with open('/opt/airflow/dags/RandomForest.pickle', 'rb') as model_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/dags/RandomForest.pickle'
+[2024-08-23T09:43:42.243+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=Credit_score_pipeline_v03, task_id=test_model, execution_date=20240822T000000, start_date=20240823T094342, end_date=20240823T094342
+[2024-08-23T09:43:42.261+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 300 for task test_model ([Errno 2] No such file or directory: '/opt/airflow/dags/RandomForest.pickle'; 391)
+[2024-08-23T09:43:42.303+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-08-23T09:43:42.327+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

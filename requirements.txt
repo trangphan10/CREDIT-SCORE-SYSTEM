@@ -1,5 +1,9 @@
 scikit-learn 
-openpyxl 
-openai
-sqlalchemy
-pymysql
+streamlit 
+sqlite3 
+numpy 
+pandas
+matplotlib
+seaborn
+tensorflow
+pickle
