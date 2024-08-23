@@ -5,6 +5,40 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
+import sqlite3
+
+# Kết nối đến cơ sở dữ liệu
+conn = sqlite3.connect('history.db')
+cursor = conn.cursor()
+
+# Tạo bảng nếu chưa có
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS run_history (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    LOAN NUMBER,
+    MORTDUE NUMBER,
+    VALUE  NUMBER,
+    REASON  NUMBER,
+    JOB  NUMBER,
+    YOJ  NUMBER,
+    DEROG  NUMBER,
+    DELINQ  NUMBER,
+    CLAGE  NUMBER,
+    NINQ  NUMBER,
+    CLNO  NUMBER,
+    DEBTINC  NUMBER,
+    SCORE  NUMBER,
+    TIMESTAMP DATETIME DEFAULT CURRENT_TIMESTAMP
+)
+''')
+
+def log_run(data):
+    cursor.execute('''
+    INSERT INTO run_history (LOAN, MORTDUE, VALUE, REASON, JOB, YOJ, DEROG, DELINQ, CLAGE, NINQ, CLNO, DEBTINC, SCORE)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (float(data['LOAN'][0]), float(data['MORTDUE'][0]), float(data['VALUE'][0]),int( data['REASON'][0]), int(data['JOB'][0]), int(data['YOJ'][0]),float( data['DEROG'][0]),
+          float(data['DELINQ'][0]), float(data['CLAGE'][0]), float(data['NINQ'][0]), float(data['CLNO'][0]), float(data['DEBTINC'][0]), data['SCORE'][0]))
+    conn.commit()
 
 # Cấu hình trang Streamlit
 st.set_page_config(
@@ -50,21 +84,24 @@ def user_input_data():
     NINQ_VAL = st.sidebar.slider('NINQ', 0, 20, 0, 1)
     CLNO_VAL = st.sidebar.slider('CLNO', 0, 75, 0, 1)
     DEBTINC_VAL = st.sidebar.slider('DEBTINC', 0, 205, 0, 1)
-        
+    
+    REASON_VALUE = 0 if REASON_VAL == 'DebtCon' else 1
+    JOB_VALUE = ['Office', 'ProfExe', 'Mgr', 'Self', 'Sales', 'Other'].index(JOB_VAL)
+    
     # Tạo dataframe từ dữ liệu người dùng nhập vào
     data = {
         'LOAN': LOAN_VAL,
         'MORTDUE': MORTDUE_VAL,
         'VALUE': VALUE_VAL,
+        'REASON': REASON_VALUE,
+        'JOB': JOB_VALUE,
         'YOJ': YOJ_VAL,
         'DEROG': DEROG_VAL,
         'DELINQ': DELINQ_VAL,
         'CLAGE': CLAGE_VAL,
         'NINQ': NINQ_VAL,
         'CLNO': CLNO_VAL,
-        'DEBTINC': DEBTINC_VAL,
-        'REASON': REASON_VAL,
-        'JOB': JOB_VAL
+        'DEBTINC': DEBTINC_VAL
     }
     input_data = pd.DataFrame(data, index=[0])
     
@@ -104,27 +141,25 @@ with col2:
 with col1:
     if st.button('Make Prediction'):
         output = df.copy()
-        for column in output.columns:
-            if output[column].dtype == 'object':
-                output[column] = label_encode.fit_transform(output[column])
-        scaled_features = scaler.fit_transform(output)
+        output.loc[:, :] = scaler.transform(output)  # Chuẩn hóa dữ liệu
+        # Dự đoán điểm tín dụng
+        credit_score = compute_credit_score(model.predict_proba(output)[0][1])
+        df['SCORE'] = credit_score
+        log_run(df)
 
-        scaled_features_df = pd.DataFrame(scaled_features, index=output.index, columns=output.columns)
-        credit_score = compute_credit_score(model.predict_proba(scaled_features)[0][1])
+        # Hiển thị kết quả dự đoán
         if 500 <= credit_score <= 600:
             st.balloons()
-            t1 = plt.Polygon([[5, 0.5], [5.5, 0], [4.5, 0]], color='black')
             st.markdown('Your credit score is **GOOD**! Congratulations!')
             st.markdown('This credit score indicates that this person is likely to repay a loan, so the risk of giving them credit is low.')
         elif 300 <= credit_score < 500:
-            t1 = plt.Polygon([[3, 0.5], [3.5, 0], [2.5, 0]], color='black')
             st.markdown('Your credit score is **REGULAR**.')
             st.markdown('This credit score indicates that this person is likely to repay a loan, but can occasionally miss some payments. Meaning that the risk of giving them credit is medium.')
         elif credit_score < 300:
-            t1 = plt.Polygon([[1, 0.5], [1.5, 0], [0.5, 0]], color='black')
             st.markdown('Your credit score is **POOR**.')
             st.markdown('This credit score indicates that this person is unlikely to repay a loan, so the risk of lending them credit is high.')
         
-        plt.gca().add_patch(t1)
-        st.pyplot(f)
-        
+        st.markdown('Your credit score is: ' + str(credit_score))
+
+# Đóng kết nối
+conn.close()
