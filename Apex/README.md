@@ -10,6 +10,7 @@
 6. Vào AppBuilder, truy cập vào ứng dụng credit_score vừa load. Truy cập vào Application Access Control, nhấn Add User Role Assignment và nhập vào các username vừa tạo với các vai trò: 
 - MANAGER: Administrator
 - STAFF: Contributor, Reader
+7. Quay lại ứng dụng và nhấn Run Application
 ## Cách chạy trực tuyến
 1. Truy cập theo đường link: https://apex.oracle.com/pls/apex/r/chanchan10/credit-score/login?session=14642550382489
 2. Đăng nhập vào tài khoản: 
