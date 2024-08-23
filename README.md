@@ -15,7 +15,10 @@ git clone https://github.com/trangphan10/CREDIT-SCORE-SYSTEM.git
 ```
 ### 2. Chạy quy trình tự động bằng Airflow
 
-- Đầu tiên cài đặt Docker và Apache Airflow trên Docker.
+- Đầu tiên cài đặt Docker và sau đó build image Apache Airflow trên Docker.
+  ```bash
+    docker build -t apache_airflow .
+  ```
 - Chạy lệnh sau để khởi động Airflow:
 ```bash
   docker-compose up
